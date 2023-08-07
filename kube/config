@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "rke2-ec2"
+  cluster:
+    server: "https://ec2-54-169-39-211.ap-southeast-1.compute.amazonaws.com/k8s/clusters/c-m-sdczgl62"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2akNDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      Fk0TmpNMwpOREUxTXpBZUZ3MHlNekEyTVRBd05URTFOVE5hRncwek16QTJNRGN3TlRFMU5UTmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qZzJNemMwTVRVek1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRWN3UUoxVU9kUDdvbApHQ0ZoWGFTZ1lkRmJtakVvcUlNVEZNa1pkM\
+      2p3RnpCQ0VLZU1YMEtDZk15a1QrKzAyYlE5R2lVaG9WQVdVcFJFCnowZFZyckhoYUtOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGR\
+      GJEeHlvNlFCMWM4dWcvNktuYmlxMDRlaVRETUFvR0NDcUdTTTQ5QkFNQ0Ewa0FNRVlDSVFDWgpnT\
+      TJIck81Z0NuWi8zOFZsZUtSVGpJdldiK3BSZXFlcU1IdGJxajE5UmdJaEFKSjdhMUtNSkZ2VUg1N\
+      2NYN0l5Ck0vbEM1Rk1zTEVpazdXclllVjZJK2pMWQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "rke2-ec2"
+  user:
+    token: "kubeconfig-user-tc7g6qghln:tw2p2w4ckxp879dtq6q2zk9mwqkz2lh2rrg8cjlm62nfcv7fhmltn7"
+
+
+contexts:
+- name: "rke2-ec2"
+  context:
+    user: "rke2-ec2"
+    cluster: "rke2-ec2"
+
+current-context: "rke2-ec2"
